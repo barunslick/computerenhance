@@ -1,3 +1,5 @@
+# Parse binary files to asm
+
 register_map = [["al", "cl", "dl", "bl", "ah", "ch", "dh", "bh"],
                 ["ax", "cx", "dx", "bx", "sp", "bp", "si", "di"]]
 
