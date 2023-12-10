@@ -81,6 +81,11 @@ def mov_imm_to_reg(first_byte, rest_byte_stream) -> str:
     return f"mov {dest_reg}, {source}"
 
 
+def add_sub_cmp(first_byte, rest_byte_stream) -> str:
+    #TODO
+    pass
+
+
 print("bits 16")
 
 
@@ -91,3 +96,5 @@ with open(file_name, 'r+b') as file:
             code_handler(mov_reg_mem_to_from_reg(first_byte_in_int, file))
         elif first_byte_in_int & 0b11110000 == 0b10110000: #mov
             code_handler(mov_imm_to_reg(first_byte_in_int, file))
+        elif first_byte_in_int & 
+
