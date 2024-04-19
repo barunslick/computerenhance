@@ -1,0 +1,24 @@
+{
+  "branches": [
+    "master"
+  ],
+  "debug": true,
+  "ci": true,
+  "tagFormat": "computerenhance@v${version}",
+  "extends": "semantic-release-monorepo",
+  "plugins": [
+    [
+      "@semantic-release/commit-analyzer",
+      {
+        "releaseRules": [
+          {
+            "message": "**",
+            "release": "patch"
+          }
+        ]
+      }
+    ],
+    "@semantic-release/git"
+  ]
+}
+

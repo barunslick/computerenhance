@@ -1,0 +1,13 @@
+{
+  "name": "testpackage",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:barunslick/computerenhance.git",
+  "author": "barunslick <barunpradhan987@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@semantic-release/git": "^10.0.1",
+    "semantic-release": "^23.0.8",
+    "semantic-release-monorepo": "^8.0.2"
+  }
+}
